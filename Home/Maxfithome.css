@@ -1,0 +1,308 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f01212;
+    color: #000000;
+}
+
+header{
+    background-image: url("../Home/imghome/gym2.jpg") ;
+    padding-left: 50px;
+    background-size: cover;
+    justify-content: space-between;
+    color: white;
+    padding: 10px 20px;
+}
+
+a{
+    text-decoration: none;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+
+.nav-left h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #fff;
+}
+
+.nav-center {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-center li {
+    margin: 0 15px;
+}
+
+.nav-center a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.nav-center a:hover {
+    text-decoration: underline;
+}
+
+.nav-right a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 15px;
+    font-size: 16px;
+}
+
+.nav-right a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .nav-center {
+        display: none; /* Hide menu items on small screens */
+    }
+    
+    .nav-right {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+}
+
+/* General Styles */
+
+
+.container {
+    width: 90%;
+    margin: auto;
+    overflow: hidden;
+}
+
+
+/* What We Offer Section */
+.team-area {
+    padding: 50px 0;
+}
+
+.section-tittle {
+    margin-bottom: 55px;
+}
+
+.section-tittle h2 {
+    font-size: 36px;
+    color: #333;
+}
+
+.single-cat {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.cat-icon img {
+    width: 300px;
+    height: auto;
+}
+
+.cat-icon1 img {
+    width: 400px;
+    height: auto;
+}
+
+.cat-cap h5 {
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+.cat-cap a {
+    color: #333;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.cat-cap a:hover {
+    color: #007bff;
+}
+
+/* Why Choose Us Section */
+.choseus-section {
+    padding: 50px 0;
+    background: #f4f4f4;
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.section-title span {
+    display: block;
+    font-size: 18px;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+.section-title h2 {
+    font-size: 36px;
+    color: #333;
+}
+
+.cs-item {
+    text-align: center;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.cs-item span {
+    display: block;
+    font-size: 40px;
+    color: #007bff;
+}
+
+.cs-item h4 {
+    margin: 20px 0;
+    font-size: 24px;
+}
+
+.cs-item p {
+    color: #666;
+}
+
+/* Pricing Area */
+.pricing-area {
+    padding: 60px 0;
+}
+
+.section-tittle {
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+.section-tittle h2 {
+    font-size: 36px;
+    color: #333;
+}
+
+.properties {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.properties__card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.about-icon img {
+    width: 50px;
+    height: auto;
+}
+
+.properties__caption {
+    padding: 20px;
+}
+
+.properties__caption .month {
+    display: block;
+    font-size: 20px;
+    color: #007bff;
+}
+
+.properties__caption p {
+    font-size: 18px;
+    margin: 20px 0;
+}
+
+.single-features {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.features-icon img {
+    width: 20px;
+    height: auto;
+}
+
+.features-caption p {
+    margin-left: 10px;
+}
+
+.border-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border: 2px solid #007bff;
+    color: #007bff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.border-btn:hover {
+    background: #007bff;
+    color: #fff;
+}
+
+h1{
+    font-size: 75px;
+    width: bold;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+/* General body styling */ 
+#introheading{
+    margin-top: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#home-intro {
+    text-align: center;
+    
+}
+
+#home-intro h2 {
+    margin-bottom: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+#home-intro p {
+    margin-bottom: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+    font-size: larger;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+

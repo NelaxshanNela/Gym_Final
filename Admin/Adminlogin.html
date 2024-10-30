@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="Adminlogin.css">
+    <link rel="icon" href="../Admin/Adminimg/maxfit.png">
+</head>
+<body>
+    <nav>
+        <div class="nav-left">
+            <h1>MaxFit Gym</h1>
+        </div>
+        <div class="nav-right">
+          <a href="./Adminhome.html"></a>  
+        </div>
+    </nav>
+    
+    <div id="form-container">
+        <div id="image-container">
+            <img src="../assets/OIP.jpg" alt="authentication.png" width="425px">
+        </div>
+        <div class="form-box">
+            <form id="login-form">
+                <h2>Admin Login</h2>
+                <div class="input-box">
+                    <input type="text" id="username-input" placeholder="Username" required >
+                    <i class='bx bxs-user'></i>
+                </div>
+                <div class="input-box">
+                    <input type="password" id="password-input" placeholder="Password" required>
+                    <i class='bx bxs-lock-alt'></i>
+                </div>
+                <button type="submit" class="btn">Login</button>
+            </form>
+            <div id="message-container">
+                <P id="login-message"></P>
+            </div>
+        </div>
+        <div id="image-container">
+            <img src="../Admin/Adminimg/bannerup.png" alt="authentication.png" width="425px">
+        </div>
+    </div>
+    <script src="Adminlogin.js"></script>
+</body>
+</html>

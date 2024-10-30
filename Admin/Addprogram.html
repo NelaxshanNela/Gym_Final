@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MaxFit Gym Registration</title>
+    <link rel="stylesheet" href="Addnewmember.css">
+    <link rel="icon" href="../Admin/Adminimg/maxfit.png">
+</head>
+<body>
+    <div class="container">
+        <h1>Register New Program</h1>
+        <form id="programregistrationForm">
+            <label for="pname">Program Name :</label>
+            <input type="text" id="pname" name="pname" required><br>
+
+            <label for="fees">Fees (per month):</label>
+            <input type="text" id="fees" name="fees"><br>
+
+            <div style="display:flex;">
+                <label for="type">Type :</label><br>
+
+                <input type="radio" id="weight" name="type" value="weight" required>
+                <label for="weight">Weight</label><br>
+                <input type="radio" id="cardio" name="type" value="cardio" required>
+                <label for="cardio">Cardio</label><br>
+            </div>
+            
+            <button type="submit">Register</button>
+            <button type="button" id="goHome">Go Home</button>
+        </form>
+    </div>
+    <script src="Addprogram.js"></script>
+</body>
+</html>

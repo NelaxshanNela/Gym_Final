@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, 
+                   initial-scale=1.0">
+    <title>MaxFit Trainee Profile</title>
+    <link rel="stylesheet" href="Traineehome.css">
+    <link rel="icon" href="../Admin/Adminimg/maxfit.png">
+
+</head>
+
+<body>
+
+    <!-- for header part -->
+    <header>
+
+        <div class="logosec">
+            <div class="logo">MaxFit Gym</div>
+            <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210182541/Untitled-design-(30).png"
+                class="icn menuicn" id="menuicn" alt="menu-icon">
+        </div>
+
+        <div class="message">
+            <div class="circle"></div>
+            <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210183322/8.png" class="icn" alt=""  id="messageimg">
+        </div>
+    </header>
+     <!-- Notification Modal -->
+     <div id="notificationModal" class="modal">
+      
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p id="notificationheader">Notifications</p>
+            <ul id="notification-list"></ul>
+        </div>
+    </div>
+
+    <div class="main-container">
+        <div class="navcontainer">
+            <nav class="nav">
+                <div class="nav-upper-options">
+                    <div class="nav-option option1">
+                        <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210182148/Untitled-design-(29).png"
+                            class="nav-img" alt="dashboard">
+                        <h3> Profile</h3>
+                    </div>
+
+                    <div class="option2 nav-option">
+                        <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210183322/9.png"
+                            class="nav-img" alt="articles">
+                        <h3><a href="Traineeactivity.html">Activities</a></h3>
+                    </div>
+
+                    <div class="nav-option logout">
+                        <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210183321/7.png"
+                            class="nav-img" alt="logout">
+                        <h3><a href="../Home/Maxfithome.html">Logout</a></h3>
+                    </div>
+
+                </div>
+            </nav>
+        </div>
+        <div class="container">
+            <h1>User Profile</h1>
+            <form id="user-profile-form">
+              
+
+         <!-- Update form remodified by mohan -->
+
+
+                <div class="form-group">
+                    <label for="Name">FirstName:</label>
+                    <input type="text" id="firstName" name="firstName">
+                </div>
+                <div class="form-group">
+                    <label for="Name">LastName:</label>
+                    <input type="text" id="lastName" name="lastName">
+                </div>
+                <div class="form-group">
+                    <label for="address">Address:</label>
+                    <input type="text" id="address" name="address">
+                </div>
+                <div class="form-group">
+                    <label for="phonenumber">Phone Number:</label>
+                    <input type="text" id="phonenumber" name="phonenumber">
+                </div>
+                <div class="form-group">
+                    <label for="address">Email:</label>
+                    <input type="text" id="email" name="email">
+                </div>
+                <div class="form-group">
+                    <label for="address">Weight:</label>
+                    <input type="number" id="weight" name="weight" min="1" max="400">
+                </div>
+                <div class="form-group">
+                    <label for="address">Height:</label>
+                    <input type="text" id="height" name="height" min="1" max="200">
+                </div>
+                
+
+                <div id="button-container">
+                    <button type="button" class="main-btn" id="update-button">Edit</button>
+                    <button type="button" class="main-btn" id="save-button">Save</button>
+                    <button type="button" class="main-btn" id="Cancel-button">Cancel</button>
+                </div>
+
+            </form>
+          
+        </div>
+        <div class="container">
+            <h2>Update Password</h2>
+            <form id="password-form">
+                <div class="form-group">
+                    <label for="oldPassword">Old Password :</label>
+                    <input type="password" id="oldPassword" name="oldPassword">
+                </div>
+                <div class="form-group">
+                    <label for="newPassword">New Password :</label>
+                    <input type="password" id="newPassword" name="newPassword">
+                </div>
+                <div class="form-group">
+                    <label for="confirmPassword">Confirm Password :</label>
+                    <input type="password" id="confirmPassword" name="confirmPassword">
+                </div>
+
+                <div id="button-container">
+                    <button type="button" class="main-btn" id="update-password">Update Password</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script src="Trineehome.js"></script>
+</body>
+
+</html>

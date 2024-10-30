@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url('../assets/h1_hero.png') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+}
+
+.container {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 50px;
+    background: rgba(70, 70, 70, 0.8); /* ash color */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    text-align: center;
+    font-weight: bold;
+    color: white;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    color: white;
+}
+
+input[type="text"],[type="number"],[type="date"],[type="email"], input[type="tel"], select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    margin-top: 10px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #000; /* white black color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #444;
+}

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, 
+                   initial-scale=1.0">
+    <title>MaxFit Gym</title>
+    <link rel="stylesheet" href="AdminHome.css">
+    <link rel="icon" href="../assets/OIP.jpg">
+    <!-- Include Chart.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+    <!-- for header part -->
+    <header>
+        <div class="logosec">
+            <div class="logo">MaxFit Gym</div>
+            <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210182541/Untitled-design-(30).png"
+                class="icn menuicn" id="menuicn" alt="menu-icon">
+        </div>
+
+        <div class="message">
+            <div class="dp">
+                <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210180014/profile-removebg-preview.png"
+                    class="dpicn" alt="dp">
+            </div>
+        </div>
+    </header>
+
+    <div class="main-container">
+        <!-- ============== Navigation =============== -->
+        <div class="navcontainer">
+            <nav class="nav">
+                <div class="nav-upper-options">
+                    <div class="nav-option option1">
+                        <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210182148/Untitled-design-(29).png"
+                            class="nav-img" alt="dashboard">
+                        <h3> Dashboard</h3>
+                    </div>
+
+                    <a href="MemberManagement.html">
+                        <div class="option2 nav-option">
+                            <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210183322/9.png"
+                                class="nav-img" alt="articles">
+                            <h3>Member Management</h3>
+                        </div>
+                    </a>
+                    <a href="Entrollments.html">
+                        <div class="option2 nav-option">
+                            <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210183322/9.png"
+                                class="nav-img" alt="articles">
+                            <h3>Entrollments</h3>
+                        </div>
+                    </a>
+
+                    <a href="feemanagement.html">
+                        <div class="nav-option option3">
+                            <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210183320/5.png"
+                                class="nav-img" alt="report">
+                            <h3>Fee Management</h3>
+                        </div>
+                    </a>
+
+                    <a href="Programmanagement.html">
+                        <div class="nav-option option4">
+                            <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210183321/6.png"
+                                class="nav-img" alt="programmanagement">
+                            <h3>Program</h3>
+                        </div>
+                    </a>
+
+                    <div class="nav-option logout">
+                        <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210183321/7.png"
+                            class="nav-img" alt="logout">
+                        <h3><a href="Adminlogin.html">Logout </a></h3>
+                    </div>
+
+                </div>
+            </nav>
+        </div>
+        <div class="main">
+            <!-- ====================== Cards =================== -->
+            <div class="cardBox">
+                <a href="MemberManagement.html">
+                    <div class="card">
+                        <div>
+                            <div class="numbers"></div>
+                            <div class="cardName">Members</div>
+                        </div>
+
+                        <div class="iconBox">
+                            <img src="./Images/man-lifting-weights-medium-dark-skin-tone-svgrepo-com.svg" width="80px"
+                                alt="">
+                        </div>
+                    </div>
+                </a>
+                <a href="Programmanagement.html">
+                    <div class="card">
+                        <div>
+                            <div class="numbers"></div>
+                            <div class="cardName">Programs</div>
+                        </div>
+
+                        <div class="iconBox">
+                            <img src="./Images/procent-badge-svgrepo-com.svg" width="80px" alt="">
+                        </div>
+                    </div>
+                </a>
+                <a href="feemanagement.html">
+                    <div class="card">
+                        <div>
+                            <div class="numbers"></div>
+                            <div class="cardName">Payments</div>
+                        </div>
+
+                        <div class="iconBox">
+                            <img src="./Images/procent-badge-svgrepo-com.svg" width="80px" alt="">
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <!-- ====================== Details =================== -->
+            <div class="report-container">
+                <div class="report-header">
+                    <div>
+                        <h1 class="recent-Articles">Trainee Details</h1>
+                    </div>
+                    <div>
+                        <a href="./MemberManagement.html" class="view">View All</a>
+                        <a href="./Addnewmember.html" class="view">Add New</a>
+                    </div>
+                    <div class="searchbar">
+                        <input type="text" id="input-box" placeholder="Search">
+                        <div class="searchbtn">
+                            <img src="https://media.geeksforgeeks.org/wp-content/uploads/20221210180758/Untitled-design-(28).png"
+                                class="icn srchicn" alt="search-icon">
+                        </div>
+                    </div>
+                </div>
+
+                <div id="form-container">
+                    <form id="personal-details">
+                        <div class="form-group">
+                            <div>
+                                <h2>Personal Details</h2>
+                            </div>
+                            <table>
+                                <tr>
+                                    <td><label for="name">Name :</label></td>
+                                    <td><input type="text" id="name" readonly></td>
+                                </tr>
+                                <tr>
+                                    <td><label for="nic">NIC :</label></td>
+                                    <td><input type="text" id="nic" readonly></td>
+                                </tr>
+                                <tr>
+                                    <td><label for="address">Address :</label></td>
+                                    <td><input type="text" id="address" readonly></td>
+                                </tr>
+                                <tr>
+                                    <td><label for="phone">Phone No :</label></td>
+                                    <td><input type="text" id="phone" readonly></td>
+                                </tr>
+                                <tr>
+                                    <td><label for="gender">Gender :</label></td>
+                                    <td><input type="text" id="gender" readonly></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </form>
+                    <form id="course-details">
+                        <div class="form-group">
+                            <div>
+                                <h2>Course Details</h2>
+                            </div>
+                            <table>
+                                <tr>
+                                    <td><label for="programid">Program ID :</label></td>
+                                    <td><input type="text" id="programid" readonly></td>
+                                </tr>
+                                <tr>
+                                    <td><label for="programs">Selected Program :</label></td>
+                                    <td><input type="text" id="programs" readonly></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </form>
+                    <form id="payment-details">
+                        <div class="form-group">
+                            <div>
+                                <h2>Payment Details</h2>
+                            </div>
+                            <table>
+                                <tr>
+                                    <td><label for="paytype">Payment Type :</label></td>
+                                    <td><input type="text" id="paytype" readonly></td>
+                                </tr>
+                                <tr>
+                                    <td><label for="fee">Fees :</label></td>
+                                    <td><input type="text" id="fee" readonly></td>
+                                </tr>
+                                <tr>
+                                    <td><label for="joindate">Join Date :</label></td>
+                                    <td><input type="text" id="joindate" readonly></td>
+                                </tr>
+                                <tr>
+                                    <td><label for="lastpaid">Last Paid Date :</label></td>
+                                    <td><input type="text" id="lastpaid" readonly></td>
+                                </tr>
+                                <tr>
+                                    <td><label for="validtill">Valid Date :</label></td>
+                                    <td><input type="text" id="validtill" readonly></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- ====================== charts =================== -->
+            <div class="report-container">
+                <div class="report-header">
+                    <h1 class="recent-Articles">Report of All Trainees</h1>
+                </div>
+
+                <!-- Flexbox container for charts -->
+                <div class="chart-container">
+                    <div class="chart-box">
+                        <canvas id="programPieChart"></canvas>
+                    </div>
+                    <div class="chart-box">
+                        <canvas id="genderBarChart"></canvas>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ====================== Reports =================== -->
+            <div class="report-container">
+                <div class="report-header">
+                    <h1 class="recent-Articles">Monthly Income Report</h1>
+                </div>
+                <form id="income-report">
+                    <div class="form-group">
+                        <table>
+                            <tr>
+                                <td><label for="">Annual Pay Trainees :</label></td>
+                                <td><input type="text" id="annualpaytrainee" ></td>
+                            </tr>
+                            <tr>
+                                <td><label for="">Monthly Pay Trainees :</label></td>
+                                <td><input type="text" id="monthlypaytrainee" ></td>
+                            </tr>
+                            <tr>
+                                <td><label for="">Paid Trainees :</label></td>
+                                <td><input type="text" id="paidtrainee" readonly></td>
+                            </tr>
+                            <tr>
+                                <td><label for="">Total Income :</label></td>
+                                <td><input type="text" id="totalincome" ></td>
+                            </tr>
+                            <tr>
+                                <td><label for="">Overdue Payment :</label></td>
+                                <td><input type="text" id="overduepayment" readonly></td>
+                            </tr>
+                        </table>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script src="AdminHome.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Member Data Table</title>
+    <link rel="icon" href="../Admin/Adminimg/maxfit.png">
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid black;
+        }
+
+        th,
+        td {
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+
+        h1 {
+            color: #c21807;
+        }
+
+        .button {
+            margin: 5px;
+            padding: 10px 15px;
+            border: none;
+            background-color: #7c0101;
+            color: white;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            background-color: #c21807;
+        }
+
+        .edit-button,
+        .delete-button {
+            margin: 0 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Entrollments Table</h1>
+    <input type="text" id="searchBar" placeholder="Search Member..." onkeyup="searchMembers()">
+    <button id="goHome" class="button">Go Home</button>
+
+    <table id="entrollTable">
+        <thead>
+            <tr>
+                <th>Member ID</th>
+                <th>Member Name</th>
+                <th>Program Id</th>
+                <th>Program Name</th>
+                <th>Entroll Date</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Data will be populated here -->
+        </tbody>
+    </table>
+
+    <script src="Entrollments.js"></script>
+</body>
+
+</html>
